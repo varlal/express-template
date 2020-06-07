@@ -2,9 +2,15 @@
 
 This package is only bin ,add `varlal-express-template`command.
 
-## How To Use
-
+## Installation
 ```
-npm i varlal-express-template -g
+$ npm install -g varlal-express-template
+```
+
+## Quick Start
+```
 varlal-express-template
 ```
+
+## Respect
+https://github.com/expressjs/generator
