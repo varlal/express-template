@@ -1,0 +1,24 @@
+{
+  "name": "varlal-express-template",
+  "version": "0.0.1",
+  "description": "express template",
+  "bin": "bin/express-template",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/varlal/express-template.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "template"
+  ],
+  "author": "varlal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/varlal/express-template/issues"
+  },
+  "homepage": "https://github.com/varlal/express-template#readme"
+}
