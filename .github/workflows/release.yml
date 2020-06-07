@@ -6,26 +6,16 @@ on:
       - master
 
 jobs:
-  release:
+  build:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [8.x, 10.x, 12.x]
-
     steps:
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
+    # npmに公開する.npmrcファイルをセットアップ
+    - uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-    - name: publish npmjs
-      run: npm publish
+        node-version: '12.x'
+        registry-url: 'https://registry.npmjs.org'
+    - run: npm install
+    - run: npm publish
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-    # no test now...
-    # - run: npm install
-    # - run: npm run build --if-present
-    # - run: npm test
-    #   env:
-    #     CI: true
