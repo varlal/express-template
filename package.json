@@ -1,8 +1,8 @@
 {
   "name": "varlal-express-template",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "express template",
-  "bin": "bin/express-template",
+  "bin": "bin/express-template.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
