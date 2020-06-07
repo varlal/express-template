@@ -1,6 +1,6 @@
 {
   "name": "varlal-express-template",
-  "version": "0.0.11",
+  "version": "0.1.0",
   "description": "express template",
   "bin": "bin/express-template.js",
   "scripts": {
